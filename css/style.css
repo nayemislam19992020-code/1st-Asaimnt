@@ -1,0 +1,642 @@
+```css
+/* ================================
+   GLOBAL CSS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #343a40;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+body > table {
+    width: 720px !important;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   ALL TABLE CELLS
+================================ */
+
+body > table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+body > table > tbody > tr:first-child {
+    background-color: #ffffff;
+}
+
+body > table > tbody > tr:first-child td {
+    padding: 15px;
+}
+
+body > table > tbody > tr:first-child img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+body > table > tbody > tr:first-child button {
+    background-color: #222;
+    color: #ffffff;
+    border: none;
+    padding: 9px 16px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+body > table > tbody > tr:first-child button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   MARQUEE
+================================ */
+
+marquee {
+    display: block;
+    background-color: #111 !important;
+    color: #ffffff;
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+marquee font {
+    color: #ffffff;
+}
+
+
+/* ================================
+   BANNER
+================================ */
+
+body > table > tbody > tr:nth-child(3) td {
+    padding: 0;
+}
+
+body > table > tbody > tr:nth-child(3) img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+body > table hr {
+    border: 0;
+    border-top: 2px solid #eeeeee;
+    margin: 20px 0;
+}
+
+
+/* ================================
+   OUR TEAM TITLE
+================================ */
+
+body > table > tbody > tr:nth-child(4) td {
+    padding: 20px 10px 10px;
+}
+
+body > table h1 {
+    font-size: 34px;
+    color: #222;
+    position: relative;
+    display: inline-block;
+}
+
+body > table h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 8px auto 0;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   TEAM MEMBERS
+================================ */
+
+body > table > tbody > tr:nth-child(5) {
+    vertical-align: top;
+}
+
+body > table > tbody > tr:nth-child(5) td {
+    width: 33.33%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+body > table > tbody > tr:nth-child(5) img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+body > table > tbody > tr:nth-child(5) img:hover {
+    transform: scale(1.04);
+}
+
+body > table > tbody > tr:nth-child(5) h2 {
+    font-size: 21px;
+    margin: 12px 0 8px;
+    color: #222;
+}
+
+body > table > tbody > tr:nth-child(5) p {
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+body > table > tbody > tr:nth-child(5) button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body > table > tbody > tr:nth-child(5) button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   CONTACT TITLE
+================================ */
+
+body > table > tbody > tr:nth-child(7) td {
+    padding: 10px;
+}
+
+body > table > tbody > tr:nth-child(7) h2 {
+    font-size: 27px;
+    color: #222;
+}
+
+body > table > tbody > tr:nth-child(7) u {
+    text-decoration: none;
+}
+
+body > table > tbody > tr:nth-child(7) h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 7px auto 0;
+}
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+body > table > tbody > tr:nth-child(8) > td {
+    padding: 20px;
+}
+
+body > table > tbody > tr:nth-child(8) table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+body > table > tbody > tr:nth-child(8) table td {
+    padding: 6px;
+    vertical-align: top;
+}
+
+
+/* ================================
+   CONTACT FORM
+================================ */
+
+body > table form {
+    width: 250px;
+}
+
+body > table form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+body > table form input[type="text"],
+body > table form input[type="email"],
+body > table form textarea {
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 4px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+body > table form textarea {
+    resize: vertical;
+}
+
+body > table form input[type="text"]:focus,
+body > table form input[type="email"]:focus,
+body > table form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+body > table form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+body > table form input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   ADDRESS
+================================ */
+
+body > table address {
+    font-style: normal;
+    font-size: 14px;
+    color: #444;
+}
+
+body > table address table {
+    width: 100%;
+}
+
+body > table address td {
+    padding: 5px 7px !important;
+}
+
+body > table address td:first-child {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+body > table address a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+body > table address a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   GOOGLE MAP
+================================ */
+
+body > table iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+body > table > tbody > tr:last-child {
+    background-color: #111 !important;
+}
+
+body > table > tbody > tr:last-child td {
+    padding: 18px 10px;
+}
+
+body > table > tbody > tr:last-child font {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+/* ================================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px 0;
+    }
+
+    body > table {
+        width: 94% !important;
+        max-width: 94%;
+    }
+
+    /* Header */
+    body > table > tbody > tr:first-child {
+        text-align: center;
+    }
+
+    body > table > tbody > tr:first-child td {
+        padding: 12px 8px;
+    }
+
+    body > table > tbody > tr:first-child img {
+        width: 65px;
+        height: 65px;
+    }
+
+    body > table > tbody > tr:first-child button {
+        padding: 7px 11px;
+        font-size: 13px;
+        margin: 3px 1px;
+    }
+
+    /* Banner */
+    body > table > tbody > tr:nth-child(3) img {
+        height: 220px;
+    }
+
+    /* Team */
+    body > table > tbody > tr:nth-child(5) td {
+        padding: 10px;
+    }
+
+    body > table > tbody > tr:nth-child(5) img {
+        height: 140px;
+    }
+
+    body > table > tbody > tr:nth-child(5) h2 {
+        font-size: 18px;
+    }
+
+    body > table > tbody > tr:nth-child(5) p {
+        font-size: 13px;
+    }
+
+    /* Contact */
+    body > table > tbody > tr:nth-child(8) table {
+        width: 100%;
+    }
+
+    body > table form {
+        width: 220px;
+    }
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 576px) {
+
+    body {
+        padding: 10px 0;
+    }
+
+    body > table {
+        width: 96% !important;
+        max-width: 96%;
+        border-radius: 8px;
+    }
+
+    body > table > tbody > tr > td {
+        padding: 10px;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    body > table > tbody > tr:first-child {
+        display: block;
+        text-align: center;
+    }
+
+    body > table > tbody > tr:first-child td {
+        display: block;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    body > table > tbody > tr:first-child img {
+        width: 65px;
+        height: 65px;
+        margin: auto;
+    }
+
+    body > table > tbody > tr:first-child button {
+        display: inline-block;
+        margin: 3px 1px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+
+    /* ================= MARQUEE ================= */
+
+    marquee {
+        font-size: 13px;
+    }
+
+
+    /* ================= BANNER ================= */
+
+    body > table > tbody > tr:nth-child(3) img {
+        height: 160px;
+    }
+
+
+    /* ================= TEAM TITLE ================= */
+
+    body > table h1 {
+        font-size: 28px;
+    }
+
+
+    /* ================= TEAM MEMBERS ================= */
+
+    body > table > tbody > tr:nth-child(5) {
+        display: block;
+    }
+
+    body > table > tbody > tr:nth-child(5) td {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center !important;
+    }
+
+    body > table > tbody > tr:nth-child(5) img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    body > table > tbody > tr:nth-child(5) h2 {
+        font-size: 21px;
+    }
+
+    body > table > tbody > tr:nth-child(5) p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    body > table > tbody > tr:nth-child(8) > td {
+        padding: 15px;
+    }
+
+    body > table > tbody > tr:nth-child(8) table {
+        width: 100%;
+    }
+
+    body > table > tbody > tr:nth-child(8) table tr {
+        display: block;
+    }
+
+    body > table > tbody > tr:nth-child(8) table tr > td {
+        display: block;
+        width: 100%;
+        text-align: center !important;
+    }
+
+
+    /* Hide the empty space column */
+    body > table > tbody > tr:nth-child(8) table tr > td:nth-child(2) {
+        display: none;
+    }
+
+
+    /* Contact form */
+    body > table form {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 25px;
+        text-align: left;
+    }
+
+
+    /* Address */
+    body > table address {
+        width: 100%;
+        text-align: left;
+    }
+
+    body > table address table {
+        width: 100%;
+    }
+
+    body > table address td {
+        padding: 5px 4px !important;
+    }
+
+
+    /* ================= MAP ================= */
+
+    body > table iframe {
+        height: 220px;
+        border-radius: 5px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    body > table > tbody > tr:last-child td {
+        padding: 15px 8px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+    body > table {
+        width: 98% !important;
+        max-width: 98%;
+    }
+
+    body > table > tbody > tr:first-child button {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
+    body > table > tbody > tr:nth-child(3) img {
+        height: 130px;
+    }
+
+    body > table > tbody > tr:nth-child(5) img {
+        height: 190px;
+    }
+
+    body > table h1 {
+        font-size: 25px;
+    }
+
+    body > table > tbody > tr:nth-child(7) h2 {
+        font-size: 23px;
+    }
+}
+```
